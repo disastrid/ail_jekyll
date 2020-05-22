@@ -1,5 +1,5 @@
 # Instruments Lab Jekyll Tutorial
-## May 22 2020
+### May 22 2020
 
 I'll be giving an intro to Jekyll from 1400-1600. This repo contains everything you need. 
 

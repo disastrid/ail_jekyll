@@ -4,6 +4,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <!-- Site title: -->
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     {%- if titles_size > 0 -%}
@@ -16,7 +17,7 @@
             </svg>
           </span>
         </label>
-
+        <!-- Top menu: -->
         <div class="trigger">
           {%- for path in site.data.menu -%}
             <a class="page-link" href="{{ site.url }}{{ path.url }}">{{ path.title }}</a>
