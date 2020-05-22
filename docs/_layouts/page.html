@@ -8,6 +8,12 @@ layout: default
   </header>
 
   <div class="post-content">
+  	{% if page.tagline %}
+  	<h2>{{ page.tagline }}</h2>
+  	{% include image.html image_name="catfriend.jpg" %}
+  	{% else %}
+  	{% include image.html image_name="germcoffee.jpg" %}
+  	{% endif %}
     {{ content }}
   </div>
 
